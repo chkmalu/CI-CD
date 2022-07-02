@@ -8,8 +8,8 @@ password = os.environ["PASSWORD"]
 router = {
     "device_type": "cisco_ios",
     "ip": "192.168.117.10",
-    "username": user,
-    "password": password
+    "username": 'malu',
+    "password": 'Password1234'
 }
 
 net_connect = ConnectHandler(**router)
