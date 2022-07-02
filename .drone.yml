@@ -1,0 +1,22 @@
+kind: pipeline
+type: docker
+name: NETWORK CI/CD
+
+
+steps:
+- name: Install and deploy
+  image: python
+  environment:
+    PASSWORD:
+      from_secret: PASSWORD
+    USERNAME:
+      from_secret: USERNAME
+  commands:
+  - pip3 install -r requirements.txt
+  - python3 get_interfaces.py
+
+trigger:
+  branch:
+    exclude:
+    - main
+    - master
