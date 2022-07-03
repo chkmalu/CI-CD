@@ -3,7 +3,7 @@ import os
 
 
 #user = os.environ["USERNAME"]
-# password = os.environ["PASSWORD"]
+password = os.environ["PASSWORD"]
 
 router = {
     "device_type": "cisco_ios",
