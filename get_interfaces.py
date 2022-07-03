@@ -2,7 +2,7 @@ from netmiko import ConnectHandler
 import os
 
 
-#user = os.environ["USERNAME"]
+user = os.environ["USERNAME"]
 password = os.environ["PASSWORD"]
 
 router = {
