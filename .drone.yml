@@ -5,7 +5,7 @@ name: NETWORK CI/CD
 
 steps:
 - name: Install and deploy
-  image: docker pull chikamalu/netcicd:latest
+  image: chikamalu/netcicd:latest
   environment:
     PASSWORD:
       from_secret: PASSWORD
