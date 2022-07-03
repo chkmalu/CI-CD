@@ -2,8 +2,8 @@ from netmiko import ConnectHandler
 import os
 
 
-user = os.environ["USERNAME"]
-password = os.environ["PASSWORD"]
+#user = os.environ["USERNAME"]
+# password = os.environ["PASSWORD"]
 
 router = {
     "device_type": "cisco_ios",
