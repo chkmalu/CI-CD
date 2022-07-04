@@ -4,7 +4,12 @@ name: NETWORK CI/CD
 
 
 steps:
-- name: Install and deploy
+#check if all python file in the repo passes pep8 standard format
+- name: Black Code Format Check
+  image: chikamalu/netcicd:latest
+  commands:
+  - black . --check
+- name: Install and deploy docker image
   image: chikamalu/netcicd:latest
   environment:
     PASSWORD:
@@ -12,7 +17,7 @@ steps:
     USERNAME:
       from_secret: USERNAME
   commands:
-  - pip3 install -r requirements.txt
+  # - pip3 install -r requirements.txt
   - python3 get_interfaces.py
 
 trigger:
