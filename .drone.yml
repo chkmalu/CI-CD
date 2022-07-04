@@ -12,7 +12,7 @@ steps:
     USERNAME:
       from_secret: USERNAME
   commands:
-  # - pip3 install -r requirements.txt
+  - pip3 install -r requirements.txt
   - python3 get_interfaces.py
 
 trigger:
