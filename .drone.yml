@@ -4,11 +4,6 @@ name: NETWORK CI/CD
 
 
 steps:
-#check if all python file in the repo passes pep8 standard format
-- name: Black Code Format Check
-  image: chikamalu/netcicd:latest
-  commands:
-  - black . --check
 - name: Install and deploy docker image
   image: chikamalu/netcicd:latest
   environment:
