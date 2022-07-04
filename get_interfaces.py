@@ -12,6 +12,6 @@ router = {
     "password": password
 }
 
-net_connec = ConnectHandler(**router)
+net_connect = ConnectHandler(**router)
 output = net_connect.send_command("show ip int brief")
 print(output)
