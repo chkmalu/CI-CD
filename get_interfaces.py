@@ -2,7 +2,7 @@ import os
 
 from netmiko import ConnectHandler
 
-user = os.environ["USER"]
+user = os.environ["USERNAME"]
 password = os.environ["PASSWORD"]
 
 iosv_l2_s1 = {
