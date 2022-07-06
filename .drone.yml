@@ -8,6 +8,12 @@ steps:
   image: chikamalu/netcicd:latest
   commands:
   - black . --check
+
+- name: Batfish Prechecks
+  image: chikamalu/netcicd:latest
+  commands:
+  - python batfish_check.py
+
 - name: Install and deploy docker image
   image: chikamalu/netcicd:latest
   environment:
