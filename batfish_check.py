@@ -3,9 +3,9 @@ from pybatfish.client.commands import *
 from pybatfish.question import load_questions
 from pybatfish.client.asserts import (
     assert_no_duplicate_router_ids,
-    assert_no_incompatible_bgp_sessions,
+    # assert_no_incompatible_bgp_sessions,
     assert_no_incompatible_ospf_sessions,
-    assert_no_unestablished_bgp_sessions,
+    # assert_no_unestablished_bgp_sessions,
     assert_no_undefined_references,
 )
 from rich import print as rprint
@@ -15,7 +15,7 @@ def test_duplicate_rtr_ids(snap):
     """Testing for duplicate router IDs"""
     assert_no_duplicate_router_ids(
         snapshot=snap,
-        protocols={"ospf", "bgp"},
+        protocols={"ospf"},
     )
 
 
