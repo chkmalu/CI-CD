@@ -8,7 +8,7 @@ from pybatfish.client.asserts import (
     assert_no_unestablished_bgp_sessions,
     assert_no_undefined_references,
 )
-from rich import print as rprint
+from rich.console import Console
 
 
 console = Console(color_system="truecolor")
