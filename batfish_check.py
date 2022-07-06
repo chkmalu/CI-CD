@@ -29,9 +29,9 @@ def main():
     init_snap = bf_init_snapshot(SNAPSHOT_DIR, name=SNAPSHOT_NAME, overwrite=True)
     load_questions()
     test_duplicate_rtr_ids(init_snap)
-    test_bgp_compatibility(init_snap)
+    # test_bgp_compatibility(init_snap)
     test_ospf_compatibility(init_snap)
-    test_bgp_unestablished(init_snap)
+    # test_bgp_unestablished(init_snap)
     test_undefined_references(init_snap)
 
 
