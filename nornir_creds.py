@@ -15,4 +15,4 @@ def nornir_set_creds(norn, username="test", password=None):
 
     for host_obj in norn.inventory.hosts.values():
         host_obj.username = username
-        host_obj.password = 
+        host_obj.password = password
