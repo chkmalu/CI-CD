@@ -101,7 +101,7 @@ router ospf 1
 !
 something super fake
    welcome to the world of tomorrow
-   its over 9000
+   its over 900
    router-id infinity
 !
 ip forward-protocol nd
