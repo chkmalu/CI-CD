@@ -14,7 +14,7 @@ steps:
   commands:
   - python batfish_check.py
 
-- name: Precheck Configuration Diff
+- name: deploy Configuration Diff
   image: chikamalu/netcicd:latest
   environment:
     MY_SECRET:
@@ -22,7 +22,7 @@ steps:
       USERNAME:
         from_secret: USERNAME
   commands:
-  - python build.py --dry_run
+  - python build.py --no_dry_run
 
 - name: Install and deploy docker image
   image: chikamalu/netcicd:latest
