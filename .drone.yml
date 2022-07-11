@@ -22,7 +22,7 @@ steps:
     USERNAME:
       from_secret: USERNAME
   commands:
-  - python build.py --dry_run
+  - python build.py
 
 - name: Install and deploy docker image
   image: chikamalu/netcicd:latest
