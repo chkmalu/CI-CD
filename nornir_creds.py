@@ -9,9 +9,9 @@ def nornir_set_creds(norn, username="test", password=None):
     Thank you Kirk!
     """
     if not username:
-        username = os.environ["USER"]
+        username = "malu"
     if not password:
-        password = os.environ["PASSWORD"]
+        password = "Password1234"
 
     for host_obj in norn.inventory.hosts.values():
         host_obj.username = username
