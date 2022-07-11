@@ -52,6 +52,8 @@ ip ssh version 2
 !
 !
 !
+interface Loopback3
+ ip address 3.3.3.3 255.255.255.255
 !
 interface Loopback0
  ip address 1.1.1.1 255.255.255.255
