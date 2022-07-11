@@ -14,5 +14,5 @@ def nornir_set_creds(norn, username="test", password=None):
         password = "Password1234"
 
     for host_obj in norn.inventory.hosts.values():
-        host_obj.username = username
-        host_obj.password = password
+        host_obj.username = "malu"
+        host_obj.password = "Password1234"
