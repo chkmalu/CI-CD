@@ -16,11 +16,11 @@ steps:
 
 - name: deploy Configuration Diff
   image: chikamalu/netcicd:latest
-  # environment:
-  #   PASSWORD:
-  #     from_secret: PASSWORD
-  #   USERNAME:
-  #     from_secret: USERNAME
+  environment:
+    PASSWORD:
+      from_secret: PASSWORD
+    USERNAME:
+      from_secret: USERNAME
   commands:
   - python build.py --dry_run
 
